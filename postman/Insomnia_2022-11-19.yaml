@@ -1,0 +1,762 @@
+_type: export
+__export_format: 4
+__export_date: 2022-11-19T07:43:57.027Z
+__export_source: insomnia.desktop.app:v2022.6.0
+resources:
+  - _id: req_9d6be1258d7f42a18f2a9e8f2ff067f5
+    parentId: fld_faa94c779f56411984dbc4cbd5ba5271
+    modified: 1668842701256
+    created: 1668828080896
+    url: http://127.0.0.1:8000/api/v1/account/register/
+    name: register
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"username":"elizabeth",
+        	"email":"elizabeth@gmail.com",
+        	"password":"Lervin20",
+        	"password2":"Lervin20"
+        	
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_bf7e40c6a7e7418791a7e003574721d8
+    authentication: {}
+    metaSortKey: -1668814554329
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_faa94c779f56411984dbc4cbd5ba5271
+    parentId: wrk_d1802bda80b34e16a36c7d2bbe8b90f1
+    modified: 1668842439153
+    created: 1668842439153
+    name: auth
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1668842439153
+    _type: request_group
+  - _id: wrk_d1802bda80b34e16a36c7d2bbe8b90f1
+    parentId: null
+    modified: 1668828080746
+    created: 1668828080746
+    name: gearplug
+    description: ""
+    scope: design
+    _type: workspace
+  - _id: req_4b27a6fbd5f341d89750c3a85df94d39
+    parentId: fld_faa94c779f56411984dbc4cbd5ba5271
+    modified: 1668842448295
+    created: 1668828080876
+    url: http://127.0.0.1:8000/api/v1/account/token/refresh/
+    name: refresh
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: >-
+        {
+        	"refresh":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY2ODkwMjIyNywiaWF0IjoxNjY4ODE1ODI3LCJqdGkiOiI0MTczZTM0ZmNjYmY0ZGY5OTA2ZTc4N2EzMTIwNjFjZSIsInVzZXJfaWQiOjF9.jULIet5fEo0GUvCOPPm6hu2TC0pcbF6qG--GNmGWAsA"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_bf7e40c6a7e7418791a7e003574721d8
+    authentication: {}
+    metaSortKey: -1668814554279
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_dc9e91aef0d24613b4258ab17f794bce
+    parentId: fld_faa94c779f56411984dbc4cbd5ba5271
+    modified: 1668842453470
+    created: 1668828080800
+    url: http://127.0.0.1:8000/api/v1/account/token/
+    name: login
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"username":"flabiohs",
+        	"password":"12345678"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_bf7e40c6a7e7418791a7e003574721d8
+    authentication: {}
+    metaSortKey: -1668814554229
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_811542bce4744bb48a18d80bd05164fe
+    parentId: fld_7bbdd8ffb6704076af3a0591509ae951
+    modified: 1668842719262
+    created: 1668828080839
+    url: http://127.0.0.1:8000/api/v1/planeta/list
+    name: lista
+    description: ""
+    method: GET
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name":"Kamino",
+        	"active":true
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_6a02ba2a399c48c2b313dd20925052d0
+      - id: pair_e0e3d202fd5e455b8fe2febd3d31e007
+        name: Authorization
+        value: Bearer  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY4ODQyOTAzLCJpYXQiOjE2Njg4NDI2MDMsImp0aSI6ImQwZTI3ZTVlYjE0MjRkODdiM2U5ZTIyNzZmM2NkNTg5IiwidXNlcl9pZCI6MX0.YCU_h42i6bhH5FfV_K5VRsBHZM68vE8lkFeCX3y73IQ
+        description: ""
+      - id: pair_45562251c9664436857bd35af22651dc
+        name: ""
+        value: ""
+        description: ""
+    authentication: {}
+    metaSortKey: -1668824711154.25
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_7bbdd8ffb6704076af3a0591509ae951
+    parentId: wrk_d1802bda80b34e16a36c7d2bbe8b90f1
+    modified: 1668828096796
+    created: 1668828096796
+    name: planeta
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1668828096796
+    _type: request_group
+  - _id: req_c9a1cc5df94c48d999b1118b2f5eca71
+    parentId: fld_7bbdd8ffb6704076af3a0591509ae951
+    modified: 1668840402567
+    created: 1668829279272
+    url: http://127.0.0.1:8000/api/v1/planeta/list/
+    name: create
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name":"Noboo",
+        	"pelicula":3,
+        	"active":true
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_6a02ba2a399c48c2b313dd20925052d0
+      - id: pair_e0e3d202fd5e455b8fe2febd3d31e007
+        name: Authorization
+        value: Bearer  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY4ODE2MzIyLCJpYXQiOjE2Njg4MTU4MjcsImp0aSI6ImE1ZTMzNzc5ZWE1MjQyOGJiOTZlZTFmZGU0ZWNmNzZiIiwidXNlcl9pZCI6MX0.D3Crxjg8uuq0GU1uZuvK2E3GuncVFKfAFU566nGzQcQ
+        description: ""
+      - id: pair_45562251c9664436857bd35af22651dc
+        name: ""
+        value: ""
+        description: ""
+    authentication: {}
+    metaSortKey: -1668819632691.625
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_bc050f33398849568922fead01e8324f
+    parentId: fld_7bbdd8ffb6704076af3a0591509ae951
+    modified: 1668840410475
+    created: 1668829345471
+    url: http://127.0.0.1:8000/api/v1/planeta/detail/3
+    name: update
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name":"Coruscant",
+        		"pelicula":3,
+        	"active":true
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_6a02ba2a399c48c2b313dd20925052d0
+      - id: pair_e0e3d202fd5e455b8fe2febd3d31e007
+        name: Authorization
+        value: Bearer  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY4ODE2MzIyLCJpYXQiOjE2Njg4MTU4MjcsImp0aSI6ImE1ZTMzNzc5ZWE1MjQyOGJiOTZlZTFmZGU0ZWNmNzZiIiwidXNlcl9pZCI6MX0.D3Crxjg8uuq0GU1uZuvK2E3GuncVFKfAFU566nGzQcQ
+        description: ""
+      - id: pair_45562251c9664436857bd35af22651dc
+        name: ""
+        value: ""
+        description: ""
+    authentication: {}
+    metaSortKey: -1668817093460.3125
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_579c18d011bd4dfab94c4d1cf13ecdb2
+    parentId: fld_7bbdd8ffb6704076af3a0591509ae951
+    modified: 1668830071337
+    created: 1668830056308
+    url: http://127.0.0.1:8000/api/v1/planeta/detail/3
+    name: searchById
+    description: ""
+    method: GET
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_6a02ba2a399c48c2b313dd20925052d0
+      - id: pair_e0e3d202fd5e455b8fe2febd3d31e007
+        name: Authorization
+        value: Bearer  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY4ODE2MzIyLCJpYXQiOjE2Njg4MTU4MjcsImp0aSI6ImE1ZTMzNzc5ZWE1MjQyOGJiOTZlZTFmZGU0ZWNmNzZiIiwidXNlcl9pZCI6MX0.D3Crxjg8uuq0GU1uZuvK2E3GuncVFKfAFU566nGzQcQ
+        description: ""
+      - id: pair_45562251c9664436857bd35af22651dc
+        name: ""
+        value: ""
+        description: ""
+    authentication: {}
+    metaSortKey: -1668815823844.6562
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_069f0454cdbd4da49241a21d3b99e0ae
+    parentId: fld_7bbdd8ffb6704076af3a0591509ae951
+    modified: 1668830179041
+    created: 1668830164055
+    url: http://127.0.0.1:8000/api/v1/planeta/detail/4
+    name: delete
+    description: ""
+    method: DELETE
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_6a02ba2a399c48c2b313dd20925052d0
+      - id: pair_e0e3d202fd5e455b8fe2febd3d31e007
+        name: Authorization
+        value: Bearer  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY4ODE2MzIyLCJpYXQiOjE2Njg4MTU4MjcsImp0aSI6ImE1ZTMzNzc5ZWE1MjQyOGJiOTZlZTFmZGU0ZWNmNzZiIiwidXNlcl9pZCI6MX0.D3Crxjg8uuq0GU1uZuvK2E3GuncVFKfAFU566nGzQcQ
+        description: ""
+      - id: pair_45562251c9664436857bd35af22651dc
+        name: ""
+        value: ""
+        description: ""
+    authentication: {}
+    metaSortKey: -1668815189036.8281
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_e68f5bb49d474bdc80871c7aa8525263
+    parentId: fld_84ae52d4b45b4bdb8a1a971ede89ce76
+    modified: 1668842624428
+    created: 1668830202295
+    url: http://127.0.0.1:8000/api/v1/personaje/list/
+    name: lista
+    description: ""
+    method: GET
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_6a02ba2a399c48c2b313dd20925052d0
+      - id: pair_e0e3d202fd5e455b8fe2febd3d31e007
+        name: Authorization
+        value: Bearer  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY4ODQyOTAzLCJpYXQiOjE2Njg4NDI2MDMsImp0aSI6ImQwZTI3ZTVlYjE0MjRkODdiM2U5ZTIyNzZmM2NkNTg5IiwidXNlcl9pZCI6MX0.YCU_h42i6bhH5FfV_K5VRsBHZM68vE8lkFeCX3y73IQ
+        description: ""
+      - id: pair_45562251c9664436857bd35af22651dc
+        name: ""
+        value: ""
+        description: ""
+    authentication: {}
+    metaSortKey: -1668824711154.25
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_84ae52d4b45b4bdb8a1a971ede89ce76
+    parentId: wrk_d1802bda80b34e16a36c7d2bbe8b90f1
+    modified: 1668830202289
+    created: 1668830202289
+    name: personaje
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1668828096746
+    _type: request_group
+  - _id: req_1b5e56892d7341569dd13382db4c2f08
+    parentId: fld_84ae52d4b45b4bdb8a1a971ede89ce76
+    modified: 1668840085343
+    created: 1668830202297
+    url: http://127.0.0.1:8000/api/v1/personaje/
+    name: create
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"full_name":"Gobernador Tarkin",
+
+        	"active":true
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_6a02ba2a399c48c2b313dd20925052d0
+      - id: pair_e0e3d202fd5e455b8fe2febd3d31e007
+        name: Authorization
+        value: Bearer  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY4ODE2MzIyLCJpYXQiOjE2Njg4MTU4MjcsImp0aSI6ImE1ZTMzNzc5ZWE1MjQyOGJiOTZlZTFmZGU0ZWNmNzZiIiwidXNlcl9pZCI6MX0.D3Crxjg8uuq0GU1uZuvK2E3GuncVFKfAFU566nGzQcQ
+        description: ""
+      - id: pair_45562251c9664436857bd35af22651dc
+        name: ""
+        value: ""
+        description: ""
+    authentication: {}
+    metaSortKey: -1668819632691.625
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_a61ced44aee94126a7ad73ee41f162ca
+    parentId: fld_84ae52d4b45b4bdb8a1a971ede89ce76
+    modified: 1668837929637
+    created: 1668830202323
+    url: http://127.0.0.1:8000/api/v1/personaje/detail/3
+    name: update
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"full_name":"Anakin Skywalker/Darth Vader",
+        	"active":true
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_6a02ba2a399c48c2b313dd20925052d0
+      - id: pair_e0e3d202fd5e455b8fe2febd3d31e007
+        name: Authorization
+        value: Bearer  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY4ODE2MzIyLCJpYXQiOjE2Njg4MTU4MjcsImp0aSI6ImE1ZTMzNzc5ZWE1MjQyOGJiOTZlZTFmZGU0ZWNmNzZiIiwidXNlcl9pZCI6MX0.D3Crxjg8uuq0GU1uZuvK2E3GuncVFKfAFU566nGzQcQ
+        description: ""
+      - id: pair_45562251c9664436857bd35af22651dc
+        name: ""
+        value: ""
+        description: ""
+    authentication: {}
+    metaSortKey: -1668817093460.3125
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_1fb426a254ed40d79fb9b03dd4ec7578
+    parentId: fld_84ae52d4b45b4bdb8a1a971ede89ce76
+    modified: 1668830522392
+    created: 1668830202339
+    url: http://127.0.0.1:8000/api/v1/personaje/detail/3
+    name: searchById
+    description: ""
+    method: GET
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_6a02ba2a399c48c2b313dd20925052d0
+      - id: pair_e0e3d202fd5e455b8fe2febd3d31e007
+        name: Authorization
+        value: Bearer  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY4ODE2MzIyLCJpYXQiOjE2Njg4MTU4MjcsImp0aSI6ImE1ZTMzNzc5ZWE1MjQyOGJiOTZlZTFmZGU0ZWNmNzZiIiwidXNlcl9pZCI6MX0.D3Crxjg8uuq0GU1uZuvK2E3GuncVFKfAFU566nGzQcQ
+        description: ""
+      - id: pair_45562251c9664436857bd35af22651dc
+        name: ""
+        value: ""
+        description: ""
+    authentication: {}
+    metaSortKey: -1668815823844.6562
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_706ad486ce4547dd978b1a57e28a8b0b
+    parentId: fld_84ae52d4b45b4bdb8a1a971ede89ce76
+    modified: 1668837849241
+    created: 1668836919655
+    url: http://127.0.0.1:8000/api/v1/personaje/list/?full_name=Padmé Amidala
+    name: filterByName
+    description: ""
+    method: GET
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_6a02ba2a399c48c2b313dd20925052d0
+      - id: pair_e0e3d202fd5e455b8fe2febd3d31e007
+        name: Authorization
+        value: Bearer  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY4ODE2MzIyLCJpYXQiOjE2Njg4MTU4MjcsImp0aSI6ImE1ZTMzNzc5ZWE1MjQyOGJiOTZlZTFmZGU0ZWNmNzZiIiwidXNlcl9pZCI6MX0.D3Crxjg8uuq0GU1uZuvK2E3GuncVFKfAFU566nGzQcQ
+        description: ""
+      - id: pair_45562251c9664436857bd35af22651dc
+        name: ""
+        value: ""
+        description: ""
+    authentication: {}
+    metaSortKey: -1668815506440.7422
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_9184e32bffb7415c9114479cce59b026
+    parentId: fld_84ae52d4b45b4bdb8a1a971ede89ce76
+    modified: 1668830202344
+    created: 1668830202344
+    url: http://127.0.0.1:8000/api/v1/planeta/detail/4
+    name: delete
+    description: ""
+    method: DELETE
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_6a02ba2a399c48c2b313dd20925052d0
+      - id: pair_e0e3d202fd5e455b8fe2febd3d31e007
+        name: Authorization
+        value: Bearer  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY4ODE2MzIyLCJpYXQiOjE2Njg4MTU4MjcsImp0aSI6ImE1ZTMzNzc5ZWE1MjQyOGJiOTZlZTFmZGU0ZWNmNzZiIiwidXNlcl9pZCI6MX0.D3Crxjg8uuq0GU1uZuvK2E3GuncVFKfAFU566nGzQcQ
+        description: ""
+      - id: pair_45562251c9664436857bd35af22651dc
+        name: ""
+        value: ""
+        description: ""
+    authentication: {}
+    metaSortKey: -1668815189036.8281
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_e2b9100fa1434b43808c5e56e266516e
+    parentId: fld_26d5495d5bc64b1ba1bdf26af72db2c3
+    modified: 1668838194329
+    created: 1668837975132
+    url: http://127.0.0.1:8000/api/v1/pelicula/list/
+    name: lista
+    description: ""
+    method: GET
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_6a02ba2a399c48c2b313dd20925052d0
+      - id: pair_e0e3d202fd5e455b8fe2febd3d31e007
+        name: Authorization
+        value: Bearer  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY4ODE2MzIyLCJpYXQiOjE2Njg4MTU4MjcsImp0aSI6ImE1ZTMzNzc5ZWE1MjQyOGJiOTZlZTFmZGU0ZWNmNzZiIiwidXNlcl9pZCI6MX0.D3Crxjg8uuq0GU1uZuvK2E3GuncVFKfAFU566nGzQcQ
+        description: ""
+      - id: pair_45562251c9664436857bd35af22651dc
+        name: ""
+        value: ""
+        description: ""
+    authentication: {}
+    metaSortKey: -1668824711154.25
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_26d5495d5bc64b1ba1bdf26af72db2c3
+    parentId: wrk_d1802bda80b34e16a36c7d2bbe8b90f1
+    modified: 1668837975082
+    created: 1668837975082
+    name: pelicula
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1668828096696
+    _type: request_group
+  - _id: req_4a9c6b515e024cce8ea06b35f7a388ff
+    parentId: fld_26d5495d5bc64b1ba1bdf26af72db2c3
+    modified: 1668840428806
+    created: 1668837975217
+    url: http://127.0.0.1:8000/api/v1/pelicula/list/
+    name: create
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name":"Star Wars: Episodio I La Amenaza Fantasma",
+        	"personaje":1,
+        	"apertura":"1999",
+        	"director":"George Lucas",
+        	"prodcutora":"Lucasfilm. Distribuidora: 20th Century Fox",
+
+        	"active":true
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_6a02ba2a399c48c2b313dd20925052d0
+      - id: pair_e0e3d202fd5e455b8fe2febd3d31e007
+        name: Authorization
+        value: Bearer  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY4ODE2MzIyLCJpYXQiOjE2Njg4MTU4MjcsImp0aSI6ImE1ZTMzNzc5ZWE1MjQyOGJiOTZlZTFmZGU0ZWNmNzZiIiwidXNlcl9pZCI6MX0.D3Crxjg8uuq0GU1uZuvK2E3GuncVFKfAFU566nGzQcQ
+        description: ""
+      - id: pair_45562251c9664436857bd35af22651dc
+        name: ""
+        value: ""
+        description: ""
+    authentication: {}
+    metaSortKey: -1668819632691.625
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_4a49db6b8c6a476fb4380fd4815abb3a
+    parentId: fld_26d5495d5bc64b1ba1bdf26af72db2c3
+    modified: 1668840441151
+    created: 1668837975236
+    url: http://127.0.0.1:8000/api/v1/pelicula/detail/3
+    name: update
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name":"Star Wars: Episodio I La Amenaza Fantasma",
+        	"personaje":1,
+        	"apertura":"1999",
+        	"director":"George Lucas",
+        	"prodcutora":"Lucasfilm. Distribuidora: 20th Century Fox",
+
+        	"active":true
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_6a02ba2a399c48c2b313dd20925052d0
+      - id: pair_e0e3d202fd5e455b8fe2febd3d31e007
+        name: Authorization
+        value: Bearer  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY4ODE2MzIyLCJpYXQiOjE2Njg4MTU4MjcsImp0aSI6ImE1ZTMzNzc5ZWE1MjQyOGJiOTZlZTFmZGU0ZWNmNzZiIiwidXNlcl9pZCI6MX0.D3Crxjg8uuq0GU1uZuvK2E3GuncVFKfAFU566nGzQcQ
+        description: ""
+      - id: pair_45562251c9664436857bd35af22651dc
+        name: ""
+        value: ""
+        description: ""
+    authentication: {}
+    metaSortKey: -1668817093460.3125
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_2d64d79f0e1f41d3bd4328e8b8743cfe
+    parentId: fld_26d5495d5bc64b1ba1bdf26af72db2c3
+    modified: 1668838228303
+    created: 1668837975260
+    url: http://127.0.0.1:8000/api/v1/pelicula/detail/3
+    name: searchById
+    description: ""
+    method: GET
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_6a02ba2a399c48c2b313dd20925052d0
+      - id: pair_e0e3d202fd5e455b8fe2febd3d31e007
+        name: Authorization
+        value: Bearer  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY4ODE2MzIyLCJpYXQiOjE2Njg4MTU4MjcsImp0aSI6ImE1ZTMzNzc5ZWE1MjQyOGJiOTZlZTFmZGU0ZWNmNzZiIiwidXNlcl9pZCI6MX0.D3Crxjg8uuq0GU1uZuvK2E3GuncVFKfAFU566nGzQcQ
+        description: ""
+      - id: pair_45562251c9664436857bd35af22651dc
+        name: ""
+        value: ""
+        description: ""
+    authentication: {}
+    metaSortKey: -1668815823844.6562
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_54651c28cbe74a00b23bfd4208d09513
+    parentId: fld_26d5495d5bc64b1ba1bdf26af72db2c3
+    modified: 1668838244802
+    created: 1668837975283
+    url: http://127.0.0.1:8000/api/v1/pelicula/detail/4
+    name: delete
+    description: ""
+    method: DELETE
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_6a02ba2a399c48c2b313dd20925052d0
+      - id: pair_e0e3d202fd5e455b8fe2febd3d31e007
+        name: Authorization
+        value: Bearer  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY4ODE2MzIyLCJpYXQiOjE2Njg4MTU4MjcsImp0aSI6ImE1ZTMzNzc5ZWE1MjQyOGJiOTZlZTFmZGU0ZWNmNzZiIiwidXNlcl9pZCI6MX0.D3Crxjg8uuq0GU1uZuvK2E3GuncVFKfAFU566nGzQcQ
+        description: ""
+      - id: pair_45562251c9664436857bd35af22651dc
+        name: ""
+        value: ""
+        description: ""
+    authentication: {}
+    metaSortKey: -1668815189036.8281
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_77f33601943b44ce853e199b340b36d1
+    parentId: wrk_d1802bda80b34e16a36c7d2bbe8b90f1
+    modified: 1668828080750
+    created: 1668828080750
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1668814554198
+    _type: environment
+  - _id: jar_cd6f610308894eb68de924d66c57e6a8
+    parentId: wrk_d1802bda80b34e16a36c7d2bbe8b90f1
+    modified: 1668828080770
+    created: 1668828080770
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
+  - _id: spc_14368a41725d45d2830ef86c966f7863
+    parentId: wrk_d1802bda80b34e16a36c7d2bbe8b90f1
+    modified: 1668828080973
+    created: 1668828080785
+    fileName: gearplug
+    contents: ""
+    contentType: yaml
+    _type: api_spec
+  - _id: uts_45c1f30f001d4ba2bf07fb5033aef88d
+    parentId: wrk_d1802bda80b34e16a36c7d2bbe8b90f1
+    modified: 1668828080936
+    created: 1668828080936
+    name: Example Test Suite
+    _type: unit_test_suite
